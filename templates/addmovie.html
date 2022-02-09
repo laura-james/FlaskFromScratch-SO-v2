@@ -1,0 +1,11 @@
+{% extends 'base.html' %} 
+{% block content %}
+    <h2>Add Movie</h2>
+    <form method="POST">
+      <label>Movie Name<input name="name"></label><br>
+      <label>Movie Description<input name="descr"></label><br>
+      <label>Year Released<input name="year"></label><br>
+      <input type="submit" value="Submit">
+    </form>
+    <strong>{{msg}}</strong>
+{% endblock %}

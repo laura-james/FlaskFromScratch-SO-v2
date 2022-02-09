@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>My Flask Project</title>
+    <style>
+      body{
+        background-color:cyan;
+        font-family:Verdana;
+      }
+      ul{  
+        display: flex;  
+      }
+      ul > li {  
+        flex: 1;  
+        list-style:none;
+      }
+      </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/user/bob">User</a></li>
+      <li><a href="/pets">Pets</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/movieslist">List Movies</a></li>
+      <li><a href="/moviesadd">Add Movie</a></li>
+      <li><a href="/runonce">DB set up</a></li>
+    </ul>
+    <h1>My Flask Project</h1>
+    
+    {% block content %}{% endblock %}
+
+    
+  <body>
+</html>

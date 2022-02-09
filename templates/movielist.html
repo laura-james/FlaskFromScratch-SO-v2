@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% block content %}
+  <h2>All Movies</h2>
+  <table border = 1> 
+    {%- for row in rows %}
+    <tr>
+      <td>{{row["name"]}}</td>
+      <td>{{row["description"]}}</td>
+      <td>{{row["year"]}}</td>
+    </tr>
+    {%- endfor %}
+  </table>
+
+{% endblock %}
