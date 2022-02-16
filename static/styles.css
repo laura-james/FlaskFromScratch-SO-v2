@@ -21,3 +21,19 @@ input{
   padding:5px;
   margin:5px;
 }
+label{
+  width: 162px;
+  display: inline-flex;
+}
+table{
+  background-color:azure;
+  border-collapse: collapse;
+  width:100%;
+  border:2px solid #ff6600;
+}
+td{
+  padding:5px;
+}
+td:hover{
+  background-color: rgb(212, 247, 184);
+}

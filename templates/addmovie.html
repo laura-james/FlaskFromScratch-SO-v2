@@ -2,10 +2,10 @@
 {% block content %}
     <h2>Add Movie</h2>
     <form method="POST">
-      <label>Movie Name<input name="name"></label><br>
-      <label>Movie Description<input name="descr"></label><br>
-      <label>Year Released<input name="year"></label><br>
-      <input type="submit" value="Submit">
+      <p><label for="name">Movie Name</label><input name="name" id="name" value="{{name}}"></p>
+      <p><label for="descr">Movie Description</label><input name="descr" value="{{descr}}"></p>
+      <p><label for="year">Year Released</label><input name="year" value="{{year}}"></p>
+      <p><input type="submit" value="Submit"></p>
     </form>
     <strong>{{msg}}</strong>
 {% endblock %}
