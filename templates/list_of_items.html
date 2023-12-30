@@ -1,0 +1,19 @@
+{% extends 'base.html' %} 
+{% block content %}
+
+<h2>All Items</h2>
+<table border = "1"> 
+  {%- for row in rows %}
+  <tr>
+    <td>{{row["name"]}}</td>
+    <td>{{row["colour"]}}</td>
+    <td>{{row["room"]}}</td>
+    <td>{{row["date"]}}</td>
+    <td>{{row["status"]}}</td>
+    <td><a href ='/edit_item?id={{row["id"]}}'>EDIT</a></td>
+    <td><a href ='/delete_item?id={{row["id"]}}'>DELETE</a></td>
+  </tr>
+  {%- endfor %}
+</table>
+
+{% endblock %}

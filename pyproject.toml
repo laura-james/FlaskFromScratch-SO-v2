@@ -8,6 +8,7 @@ authors = ["Your Name <you@example.com>"]
 python = "^3.8"
 Werkzeug = "^2.0.2"
 Flask = "^2.0.2"
+Flask-Cors = "^4.0.0"
 
 [tool.poetry.dev-dependencies]
 

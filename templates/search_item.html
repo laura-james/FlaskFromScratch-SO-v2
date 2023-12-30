@@ -1,0 +1,16 @@
+{% extends 'base.html' %} 
+{% block content %}
+<form method="POST"><!-- LAJ changed back to POST -->
+  <p><label for="name">Item Name</label><input name="name" id="name" value="{{name}}"></p>
+  <p><label for="colour">Item Colour</label><input name="colour" value="{{colour}}"></p>
+  <p><label for="room">Item Room</label><input name="room" value="{{room}}"></p>
+  <p><label for="room">Date</label><input name="date" value="{{date}}" type="date"></p>
+    <!-- LAJ use a submit button -->
+  <input type ="submit" value="SEARCH">
+    
+  <button onclick="window.location.href='/items_list'">Search</button>
+</form>
+
+
+
+{% endblock %}

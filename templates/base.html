@@ -2,22 +2,20 @@
   <head>
     <title>Mrs James' Example Flask Project</title>
     <link rel="stylesheet" href="/static/styles.css">
-
   </head>
   <body>
+    <div id="main">
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/user/bob">User</a></li>
-      <li><a href="/pets">Pets</a></li>
-      <li><a href="/login">Login</a></li>
-      <li><a href="/movieslist">List Movies</a></li>
-      <li><a href="/moviesadd">Add Movie</a></li>
+      <li><a href="/search_item">Search Items</a></li>
+      <li><a href="/report_item">Report Item</a></li>
+      <li><a href="/list_of_items">List Of Items</a></li> <!-- LAJ I've uncommented it to see whats in your db-->
       <li><a href="/runonce">DB set up</a></li>
+  
     </ul>
     <h1>My Flask Project</h1>
     
     {% block content %}{% endblock %}
 
-    
-  <body>
+    </div>
+  </body>
 </html>
